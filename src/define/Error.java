@@ -10,6 +10,7 @@ public class Error {
 	static public final String	STR_UNKNOWN = null;
 	static public final Object	OBJ_UNKNOWN = null;
 	
+	static public final int ERROR_OK = 0;
 	static public final int	ERROR_GENERAL = -1;
 	static public final int	ERROR_RECORD_DUPLICATE = -2;
 	static public final int	ERROR_WRONG_PASSWORD = -3;
@@ -20,6 +21,11 @@ public class Error {
 		lastError = err;
 	}
 	static public int getLastError(){
+		int err = lastError;
+		lastError = ERROR_OK;
+		return err;
+	}
+	static public int peekLastError(){
 		return lastError;
 	}
 	static public String translateError(int err){

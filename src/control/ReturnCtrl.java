@@ -12,7 +12,7 @@ public class ReturnCtrl {
 	public boolean updateReturn(Return returnInfo){
 		return false;
 	}
-	public boolean cancelReturn(int returnId){
+	public boolean deleteReturn(int returnId){
 		return false;
 	}
 	public ArrayList<Return> searchReturn(Return returnInfo){

@@ -9,10 +9,13 @@ public class RentCtrl {
 	public Rent createRent(Rent rent){
 		return null;
 	}
-	public boolean updateRent(Rent rent){
+	public boolean updateRent(Rent rent){ //for both modify & cancel
 		return false;
 	}
-	public boolean cancelRent(int rentId){
+//	public boolean cancelRent(int rentId){
+//		return false;
+//	}
+	public boolean deleteRent(int rentId){
 		return false;
 	}
 	public ArrayList<Rent> searchRent(Rent rent){

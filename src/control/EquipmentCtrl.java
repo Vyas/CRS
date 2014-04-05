@@ -11,7 +11,7 @@ public class EquipmentCtrl {
 	public boolean updateEquipment(Equipment equipment){
 		return false;
 	}
-	public boolean removeEquipment(Equipment equipment){
+	public boolean removeEquipment(int equipmentId){
 		return false;
 	}
 	public Equipment getEquipment(int equipmentId){
@@ -21,16 +21,13 @@ public class EquipmentCtrl {
 		return null;
 	}
 
-	public boolean appendEquipmentTypeToVehicleType(){
+	public boolean appendEquipmentTypeToVehicleType(String EquipmentType, String VehicleType){
 		return false;
 	}
-	public boolean removeEquipmentTypeFromVehicleType(){
+	public boolean removeEquipmentTypeFromVehicleType(String EquipmentType, String VehicleType){
 		return false;
 	}
-	public ArrayList<String> getEquipmentTypeForVehicleType(){
-		return null;
-	}
-	public ArrayList<String> getVehicleType(){
+	public ArrayList<String> getEquipmentTypeForVehicleType(String VehicleType){
 		return null;
 	}
 	public ArrayList<String> getEquipmentType(){

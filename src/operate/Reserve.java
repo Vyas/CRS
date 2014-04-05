@@ -2,7 +2,6 @@ package operate;
 
 import java.util.ArrayList;
 
-import vehicle.Equipment;
 import vehicle.Vehicle;
 
 public class Reserve {
@@ -11,15 +10,15 @@ public class Reserve {
 	public int staffId;
 	
 	public int branch;
-	public Vehicle.TYPE type;
+	public /*Vehicle.TYPE*/String type;
 	public long pickUpTime;
 	public long returnTime;
-	public ArrayList<Equipment.TYPE> equipments;	//addEquipment, removeEquipment
+	public ArrayList</*Equipment.TYPE*/String> equipments;	//addEquipment, removeEquipment
 	public Vehicle.INSURANCE insurance;
 	public long reserveTime;
 	public long lastUpdateTime;		//add by Elitward
 	
-	public long reservationNumber;	//(can be NULL in database, if not reserved in advance)
+	public /*long*/String reservationNumber;	//(can be NULL in database, if not reserved in advance)
 	
 	public boolean create(){
 		return false;
